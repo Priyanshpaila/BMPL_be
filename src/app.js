@@ -9,6 +9,7 @@ const { errorHandler } = require("./middleware/errorHandler");
 
 const healthRoutes = require("./routes/health.routes");
 const quotesRoutes = require("./routes/quotes.routes");
+const quotesNotifyRoutes = require("./routes/quoteNotify.route")
 
 const app = express();
 
@@ -29,6 +30,7 @@ app.use(
 // routes
 app.use("/health", healthRoutes);
 app.use("/api/quotes", rateLimitQuotes, quotesRoutes);
+app.use("/api/quote-notify", quotesNotifyRoutes);
 
 app.use(notFound);
 app.use(errorHandler);
