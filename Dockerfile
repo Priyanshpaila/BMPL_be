@@ -10,12 +10,7 @@ ENV NODE_ENV=production
 # Mongo
 ENV MONGODB_URI=mongodb://192.168.13.84/bmpl_quotes
 
-# WhatsApp Cloud API (Meta for Developers)
-# ENV WHATSAPP_PHONE_NUMBER_ID=699536063241390
-# ENV WHATSAPP_ACCESS_TOKEN=EAAXJFQtLEDQBOZBHrYSdXpr9nfLRkQSG6lkQlYROT6P5uCGIATm3oAC6M7jlJTDEyKZCQZBapSLhL1j1nbzhYZAbwrL39QuxooyRmEJWHe9IG8WqnsTasuUELdyCPi4MmlEFM1oyNHhhpz5ZCCvMxd8XUxMuzhBqkGCNmNT6wlz2dYIvoCHWIjxFGR2THgYzjvePeVfnbM2BFeSqb
-# ENV WHATSAPP_TEMPLATE_NAME=expo_rr
-# ENV WHATSAPP_TEMPLATE_LANG=en_US
-# ENV WHATSAPP_HEADER_IMAGE=https://i.postimg.cc/bJctsBJw/hira-rrispat-logo.png
+
 
 ENV ADMIN_API_KEY=eastorwestbmplisbest
 ENV CORS_ORIGIN=https://bmpl.vercel.app/
@@ -28,8 +23,7 @@ ENV SMTP_USER=connect@bhawanimoulders.com
 ENV SMTP_PASS=ragrawal@1194
 ENV SMTP_FROM=connect@bhawanimoulders.com
 
-# ENV APP_PUBLIC_URL=https://www.rrispat.com
-# ENV WHATSAPP_HEADER_IMAGE=https://i.postimg.cc/bJctsBJw/hira-rrispat-logo.png
+
 
 # Set working directory
 WORKDIR /app
@@ -49,10 +43,10 @@ EXPOSE ${PORT}
 CMD ["node", "src/index.js"]
 
 
-# docker build  --no-cache -t 192.168.13.72:5000/expobe_31oct2025 .      
-# docker run -d --name expobe_31oct2025 -p 82:82 expobe_31oct2025_image
+# docker build  --no-cache -t 192.168.13.72:5000/bmpl_be_20_jan_2026 .      
+# docker run -d --name bmpl_be_20_jan_2026 -p 82:82 bmpl_be_20_jan_2026_image
 
-# docker tag expobe_31oct2025_image 192.168.13.72:5000/expobe_31oct2025
-# docker push 192.168.13.72:5000/expobe_31oct2025
-# docker pull 192.168.13.72:5000/expobe_31oct2025
-# docker run -d --name expobe_31oct2025 -p 82:82 192.168.13.72:5000/expobe_31oct2025
+# docker tag bmpl_be_20_jan_2026_image 192.168.13.72:5000/bmpl_be_20_jan_2026
+# docker push 192.168.13.72:5000/bmpl_be_20_jan_2026
+# docker pull 192.168.13.72:5000/bmpl_be_20_jan_2026
+# docker run -d --name bmpl_be_20_jan_2026 -p 82:82 192.168.13.72:5000/bmpl_be_20_jan_2026
