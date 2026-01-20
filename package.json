@@ -1,0 +1,24 @@
+{
+  "name": "bmpl-quotes-backend",
+  "version": "1.0.0",
+  "description": "BMPL Quotes backend (Express + MongoDB) with WhatsApp Cloud API notifications",
+  "main": "src/index.js",
+  "type": "commonjs",
+  "scripts": {
+    "dev": "node --watch src/index.js",
+    "start": "node src/index.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "axios": "^1.7.9",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-rate-limit": "^7.4.0",
+    "helmet": "^7.1.0",
+    "mongoose": "^8.6.3",
+    "morgan": "^1.10.0"
+  }
+}
